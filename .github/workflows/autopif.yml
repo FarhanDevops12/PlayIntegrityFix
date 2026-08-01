@@ -15,7 +15,7 @@ jobs:
       uses: actions/checkout@v6
       with:
         fetch-depth: 1
-        ref: bot
+        ref: inject_s
 
     - name: Get device list
       id: get_info
@@ -48,7 +48,7 @@ jobs:
       uses: actions/checkout@v6
       with:
         fetch-depth: 1
-        ref: bot
+        ref: inject_s
 
     - name: Process ROM
       uses: nick-invision/retry@v4
@@ -106,7 +106,7 @@ jobs:
       uses: actions/checkout@v6
       with:
         fetch-depth: 1
-        ref: bot
+        ref: inject_s
 
     - name: Clean up
       run: |
